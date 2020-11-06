@@ -1,0 +1,16 @@
+version: '3.6'
+services:
+  newton:
+    build:
+      context: .
+    image: newton
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=main.py
+    command: sh -c "flask run --host=0.0.0.0 "
+    ports:
+      - "5000:5000"
+networks:
+  default:
+    external:
+      name: app-safe-network
