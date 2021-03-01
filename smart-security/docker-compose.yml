@@ -1,0 +1,21 @@
+version: '3.8'
+
+# services:
+#     security:
+#         build:
+#             dockerfile: Dockerfile
+#             context: .
+#         image: security
+#         container_name: security
+#         restart: always
+#         command: ''
+#         volumes:
+#             - ..:/data
+#         ports: 
+#             - "0000:0000"
+#         tty: true
+
+# networks:
+#     default:
+#         external:
+#             name: "database-network"
