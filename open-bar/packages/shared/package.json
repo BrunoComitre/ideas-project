@@ -1,0 +1,24 @@
+{
+    "name": "shared",
+    "version": "1.0.0",
+    "description": "> TODO: description",
+    "author": "Bruno Alves Comitre <bruno-comitre@hotmail.com>",
+    "homepage": "",
+    "license": "ISC",
+    "main": "lib/shared.js",
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "lib"
+    ],
+    "scripts": {
+        "test": "echo \"Error: run tests from root\" && exit 1"
+    },
+    "dependencies": {
+        "pino": "^6.13.3",
+        "pino-http": "^5.8.0",
+        "pino-pretty": "^7.0.1"
+    }
+}

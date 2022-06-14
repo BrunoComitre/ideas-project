@@ -1,0 +1,10 @@
+{
+    "files": [],
+    "references": [
+        { "path": "./packages/app/src" },
+
+        { "path": "./packages/server/src" },
+
+        { "path": "./packages/shared/src" }
+    ]
+}

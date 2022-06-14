@@ -1,0 +1,33 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+    "extends": "../../../tsconfig.base.json",
+    "compileOnSave": false,
+    "compilerOptions": {
+        "baseUrl": "./",
+        "outDir": "./dist/out-tsc",
+        // "outDir": "../dist",
+        // "declaration": false,
+        // "allowJs": true,
+        // "allowSyntheticDefaultImports": true,
+        // "resolveJsonModule": true,
+        // "isolatedModules": true,
+        // "noEmit": true,
+        // "outDir": "../dist",
+        "downlevelIteration": true,
+        "importHelpers": true,
+        "lib": ["esNext", "dom"]
+    },
+    "angularCompilerOptions": {
+        "enableI18nLegacyMessageIdFormat": false,
+        "strictInjectionParameters": true,
+        "strictInputAccessModifiers": true,
+        "strictTemplates": true
+    },
+    "references": [{ "path": "../../components/src" }],
+    "exclude": [
+        "../../../../../node_modules",
+        "../../../node_modules",
+        "../../../build",
+        "**/*.spec.ts"
+    ]
+}

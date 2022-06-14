@@ -1,0 +1,18 @@
+{
+    "extends": "../../../tsconfig.base.json",
+    "compilerOptions": {
+        "allowJs": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "outDir": "../dist",
+        "types": ["node"]
+    },
+    "references": [{ "path": "../../app/src" }],
+    "exclude": [
+        "../../../../../node_modules",
+        "../../../node_modules",
+        "../../../build",
+        "**/*.spec.ts"
+    ]
+}

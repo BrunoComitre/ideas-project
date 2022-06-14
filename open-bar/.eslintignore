@@ -1,0 +1,7 @@
+**/umd/**
+**/dist/**
+**/build/**
+**/node_modules/**
+**/*.test.{js,ts}
+**/*.spec.{js,ts}
+**/config-overrides.js
