@@ -1,0 +1,151 @@
+{
+    "name": "ermac",
+    "version": "0.2.0",
+    "private": true,
+    "description": "Api for Study Architecture",
+    "keywords": [
+        "angular",
+        "nodejs",
+        "typescript"
+    ],
+    "author": {
+        "name": "Bruno e Gustavo",
+        "email": "brunoegustavo@gmail.com.br",
+        "url": "https://brunoegustavo.com.br/"
+    },
+    "license": "MIT",
+    "main": "server.js",
+    "scripts": {
+        "ng": "ng",
+        "start": "node server.js",
+        "dev:start": "ng serve",
+        "dev:build": "ng build --configuration production",
+        "dev:test": "ng test",
+        "dev:lint": "ng lint",
+        "dev:e2e": "ng e2e",
+        "postinstall": "ngcc",
+        "homolog:build": "ng build --configuration production -c=homolog",
+        "lint": "./node_modules/.bin/ESLint -c .eslintrc.json --ext .ts",
+        "restore": "npm install --loglevel=error"
+    },
+    "engineStrict": true,
+    "engines": {
+        "node": "0.10"
+    },
+    "eslintConfig": {
+        "extends": [
+            "angular"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 Chrome version",
+            "last 1 Edge version",
+            "last 1 Firefox version",
+            "last 1 Opera version",
+            "last 1 safari version",
+            "not IE 11",
+            "not dead"
+        ]
+    },
+    "lint-staged": {
+        "src/**/*.{ts,tsx}": [
+            "node ng-lint-staged.js dev:lint",
+            "prettier --write"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged && ng lint && lint-staged"
+        }
+    },
+    "dependencies": {
+        "@angular/animations": "12.0.0",
+        "@angular/cdk": "^9.2.4",
+        "@angular/common": "12.0.0",
+        "@angular/compiler": "12.0.0",
+        "@angular/core": "12.0.0",
+        "@angular/forms": "12.0.0",
+        "@angular/http": "~7.0.0",
+        "@angular/localize": "12.0.0",
+        "@angular/material": "^9.2.4",
+        "@angular/platform-browser": "12.0.0",
+        "@angular/platform-browser-dynamic": "12.0.0",
+        "@angular/router": "12.0.0",
+        "@auth0/angular-jwt": "^2.1.2",
+        "@types/node": "^14.14.27",
+        "@types/socket.io-client": "^1.4.34",
+        "core-js": "3.8.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-simple-import-sort": "^7.0.0",
+        "express": "4.17.1",
+        "gatekeeper-client-sdk": "0.1.1",
+        "material-design-icons": "^3.0.1",
+        "material-icons": "^0.3.0",
+        "ng-mat-select-infinite-scroll": "^2.1.1",
+        "ng-snotify": "^9.0.1",
+        "ngx-autosize": "^1.4.1",
+        "ngx-pagination-data-source": "^2.0.0",
+        "ngx-toastr": "13.2.1",
+        "page": "^1.11.6",
+        "rxjs": "6.6.7",
+        "rxjs-observe": "^2.1.4",
+        "socket.io-client": "^2.3.1",
+        "tslib": "^2.0.3",
+        "url-polyfill": "^1.1.12",
+        "zone.js": "~0.11.4"
+    },
+    "devDependencies": {
+        "@angular-devkit/build-angular": "12.0.0",
+        "@angular-eslint/eslint-plugin": "^12.0.0",
+        "@angular-eslint/eslint-plugin-template": "^12.0.0",
+        "@angular/cli": "12.0.0",
+        "@angular/compiler-cli": "12.0.0",
+        "@angular/language-service": "12.0.0",
+        "@types/jasmine": "~3.6.2",
+        "@types/jasminewd2": "2.0.8",
+        "@types/node": "14.14.10",
+        "@typescript-eslint/eslint-plugin": "^4.23.0",
+        "@typescript-eslint/eslint-plugin-tslint": "^4.23.0",
+        "@typescript-eslint/parser": "^4.23.0",
+        "admin-lte": "3.1.0",
+        "codelyzer": "^6.0.1",
+        "eslint": "^7.26.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-config-standard": "^16.0.2",
+        "eslint-import-resolver-typescript": "^2.4.0",
+        "eslint-plugin-import": "^2.23.0",
+        "eslint-plugin-jsdoc": "^34.2.2",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prefer-arrow": "^1.2.3",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-promise": "^4.3.1",
+        "eslint-plugin-react": "^7.23.2",
+        "eslint-plugin-standard": "^5.0.0",
+        "eslint-plugin-unicorn": "^32.0.1",
+        "husky": "4.3.0",
+        "jasmine-core": "~3.6.0",
+        "jasmine-spec-reporter": "~6.0.0",
+        "karma": "6.3.2",
+        "karma-chrome-launcher": "~3.1.0",
+        "karma-coverage-istanbul-reporter": "3.0.3",
+        "karma-jasmine": "~4.0.1",
+        "karma-jasmine-html-reporter": "^1.5.4",
+        "lint-staged": "10.5.3",
+        "node-fetch": "^2.6.1",
+        "prettier": "2.2.1",
+        "pretty-quick": "3.1.0",
+        "protractor": "7.0.0",
+        "ts-node": "9.1.0",
+        "ts-node-dev": "^1.1.6",
+        "tslint-config-prettier": "1.18.0",
+        "tslint-plugin-prettier": "2.3.0",
+        "typescript": "4.2.4"
+    }
+}

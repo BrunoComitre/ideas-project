@@ -1,0 +1,16 @@
+{
+  // Extend your base config to share compilerOptions, etc
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    // Ensure that nobody can accidentally use this config for a build
+    "outDir": "../out-tsc/app",
+    "types": [],
+    "noEmit": true
+  },
+  "files": ["src/main.ts", "src/polyfills.ts"],
+  "include": [
+    // Whatever paths you intend to lint
+    "**/*.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,214 @@
+{
+  // "terminal.integrated.fontSize": 12,
+
+  "debug.inlineValues": true,
+
+  "editor.tabSize": 2,
+  // "editor.fontSize": 12,
+  "editor.lineHeight": 16,
+  // "editor.fontFamily": "monospace",
+  "editor.minimap.enabled": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  "editor.rulers": [
+    {
+        "column": 80,
+        "color": "#00455a9d"
+      },
+      {
+        "column": 100, // ruler with default or editorRuler.foreground color column 100
+        "color": "#096e009a"
+      },
+      {
+        "column": 120,
+        "color": "#ff00006c"
+      },
+  ],
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.dragAndDrop": false,
+  "editor.emptySelectionClipboard": false,
+  "editor.fontLigatures": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.links": false,
+  "editor.mouseWheelZoom": true,
+  "editor.smoothScrolling": true,
+
+  "explorer.autoReveal": false,
+  "explorer.openEditors.visible": 0,
+
+  "emmet.syntaxProfiles": { "javascript": "jsx" },
+  "emmet.includeLanguages": { "javascript": "javascriptreact" },
+
+  "extensions.ignoreRecommendations": true,
+
+  "files.autoGuessEncoding": true,
+  "files.encoding": "utf8",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  // "files.exclude": {
+  //   "**/.git": true,
+  //   "**/.svn": true,
+  //   "**/.hg": true,
+  //   "**/CVS": true,
+  //   "**/.DS_Store": true,
+  //   "**/*.bat": true,
+  //   "**/*.csproj.user": true,
+  //   "**/*.log": true,
+  //   "**/*.npmrc": true,
+  //   "**/*.ruleset": true,
+  //   "**/*.user": true,
+  //   "**/*.yml": true,
+  //   "**/.favorites.json": true,
+  //   "**/.vs": true,
+  //   "**/Directory.Build.props": true,
+  //   "**/Logs": true,
+  //   "**/PublishProfiles": true,
+  //   "**/TestResults": true,
+  //   "**/bin": true,
+  //   "**/dist": true,
+  //   "**/dockerfile": true,
+  //   "**/license.md": true,
+  //   "**/node_modules": true,
+  //   "**/obj": true,
+  //   "**/package-lock.json": true,
+  //   "**/packages": true
+  //   // "**/node_modules": true
+  // },
+
+  "files.associations": {
+    ".sequelizerc": "javascript",
+    ".stylelintrc": "json",
+    ".prettierrc": "json",
+    "*.tsx": "typescriptreact"
+  },
+
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.fetchOnPull": true,
+  "git.ignoreLegacyWarning": true,
+  "git.promptToSaveFilesBeforeCommit": "always",
+
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.advanced.messages": {
+    "suppressLineUncommittedWarning": true
+  },
+
+  "html.format.endWithNewline": true,
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true,
+  "html.format.wrapAttributes": "preserve-aligned",
+  "html.format.wrapLineLength": 0,
+
+  "markdown.extension.toc.updateOnSave": false,
+
+  "references.preferredLocation": "view",
+
+  "search.quickOpen.includeHistory": false,
+  "search.showLineNumbers": true,
+  "search.useGlobalIgnoreFiles": true,
+  "search.exclude": {
+    "**/*.bat": true,
+    "**/*.csproj.user": true,
+    "**/*.log": true,
+    "**/*.npmrc": true,
+    "**/*.ruleset": true,
+    "**/*.user": true,
+    "**/.dockerignore": true,
+    "**/.editorconfig": true,
+    "**/.git": true,
+    "**/.gitattributes": true,
+    "**/.gitignore": true,
+    "**/.vs": true,
+    "**/.vscode": true,
+    "**/Logs": true,
+    "**/PublishProfiles": true,
+    "**/TestResults": true,
+    "**/bin": true,
+    "**/dist": true,
+    "**/license.md": true,
+    "**/node_modules": true,
+    "**/obj": true,
+    "**/package-lock.json": true
+  },
+
+  "typescript.tsserver.log": "verbose",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "typescript.suggest.autoImports": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.surveys.enabled": false,
+
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  "window.title": "${dirty}${activeEditorShort}${separator}${rootPath}${separator}",
+
+  "workbench.commandPalette.history": 10,
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.openPositioning": "last",
+  "workbench.editor.restoreViewState": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.tips.enabled": false,
+  "workbench.view.alwaysShowHeaderActions": true,
+
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.labelFormat": "short",
+  "workbench.colorCustomizations": {
+      "activityBar.activeBackground": "#000000",
+      "activityBar.activeBorder": "#ffffff",
+      "activityBar.background": "#000000",
+      "activityBar.foreground": "#ffffff",
+      "activityBar.inactiveForeground": "#ffffff",
+      "activityBarBadge.background": "#ffffff",
+      "activityBarBadge.foreground": "#000000",
+      "statusBar.background": "#000000",
+      "statusBar.foreground": "#ffffff",
+      "statusBarItem.hoverBackground": "#000000",
+      "titleBar.activeBackground": "#000000",
+      "titleBar.activeForeground": "#ffffff",
+      "titleBar.inactiveBackground": "#000000",
+      "titleBar.inactiveForeground": "#ffffff",
+      "editor.background": "#000000",
+      "sideBar.background": "#000000",
+      "sideBar.border": "#ffffff",
+      "tab.activeBackground": "#888888",
+      "editorGroupHeader.tabsBackground": "#000000"
+  },
+
+  "cSpell.language": "pt,en",
+  "cSpell.userWords": [
+    "brunocomitre"
+  ],
+  "cSpell.ignoreWords": [
+    "example"
+  ],
+  "cSpell.enableFiletypes": [
+    "!asciidoc",
+    "!c",
+    "!cpp",
+    "!csharp",
+    "!go",
+    "!handlebars",
+    "!haskell",
+    "!jade",
+    "!java",
+    "!latex",
+    "!php",
+    "!pug",
+    "!python",
+    "!restructuredtext",
+    "!rust",
+    "!scala",
+    "!scss"
+  ],
+  "git.ignoreLimitWarning": true
+}
